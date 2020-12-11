@@ -10,6 +10,7 @@ import Resources from './components/pages/Resources';
 function App() {
   return  (
     <Router>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/resources" component={Resources} />
