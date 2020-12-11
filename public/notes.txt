@@ -1,0 +1,7 @@
+low vision icon: <i class="fas fa-low-vision"></i>
+deaf icon: <i class="fas fa-deaf"></i>
+assitive listening: <i class="fas fa-assistive-listening-systems"></i>
+universal access: <i class="fas fa-universal-access"></i>
+phone: <i class="fas fa-phone-volume"></i>
+wheelchair: <i class="fas fa-wheelchair"></i>
+blind: <i class="fas fa-blind"></i>
