@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
 import './HeroSection.css';
+import { Link } from 'react-router-dom'
 
 
 
@@ -10,7 +10,11 @@ function HeroSection() {
         <div className='hero-container'>
             <h1>Access For All</h1>
             <div className="hero-btns">
-                <Button className='btns'>Information</Button>
+            <Link to="/info" className='btn-mobile'>
+                <button className='btn' >
+                    Information
+                </button>
+            </Link>
             </div>         
         </div>  
     )

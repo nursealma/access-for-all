@@ -1,4 +1,3 @@
-
 import './App.css';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './components/Navbar.js';
@@ -12,7 +11,7 @@ function App() {
     <Router>
         <Navbar />
         <Switch>
-        <Route  path="/" exact component={Home} />
+        <Route  path="/" component={Home} />
         <Route  path="/info" exact component={Info} />
         <Route  path="/resources" exact component={Resources} />
         </Switch>
