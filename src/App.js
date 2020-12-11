@@ -6,16 +6,20 @@ import Info from './components/pages/Info';
 import Resources from './components/pages/Resources';
 
 
+
 function App() {
   return (
+      <>
     <Router>
         <Navbar />
         <Switch>
-        <Route  path="/" exact component={Home} />
-        <Route  path="/info" exact component={Info} />
         <Route  path="/resources" exact component={Resources} />
+        <Route  path="/info" exact component={Info} />
+        <Route  path="/" exact component={Home} />
+        <Route  path="/home" exact component={Home} />
         </Switch>
     </Router>
+    </>
   );
 }
 
