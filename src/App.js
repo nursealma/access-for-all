@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import Navbar from './components/Navbar.js';
 import Home from './components/pages/Home';
 import Info from './components/pages/Info';
@@ -8,18 +8,17 @@ import Resources from './components/pages/Resources';
 
 
 function App() {
-  return (
-      <>
+  return  (
     <Router>
-        <Navbar />
-        <Switch>
-        <Route  path="/resources" exact component={Resources} />
-        <Route  path="/info" exact component={Info} />
-        <Route  path="/" exact component={Home} />
-        <Route  path="/home" exact component={Home} />
-        </Switch>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/resources" component={Resources} />
+        <Route path="/info" component={Info} />
+        <Route path="*">
+          <Redirect to="/" />
+        </Route>
+      </Switch>
     </Router>
-    </>
   );
 }
 
